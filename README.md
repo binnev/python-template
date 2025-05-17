@@ -18,3 +18,15 @@ Pass `--upgrade` to upgrade:
 ```sh 
 uv lock --upgrade
 ```
+
+Install dependencies:  
+(this will only install the core dependencies)
+```sh 
+uv pip install -r pyproject.toml
+```
+
+Install extra dependencies defined in `project.optional-dependencies`:  
+```sh 
+uv pip install -r pyproject.toml --all-extras
+```
+
