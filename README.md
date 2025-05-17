@@ -4,9 +4,14 @@
 Use `uv` -- it's basically a Cargo for python, written in rust
 
 
-Add a library: 
+Add a dependency: 
 ```sh
 uv add ruff
+```
+
+Add a dependency to the optional "dev" group: 
+```sh
+uv add ruff --optional dev
 ```
 
 Create a new lockfile: 
@@ -30,3 +35,16 @@ Install extra dependencies defined in `project.optional-dependencies`:
 uv pip install -r pyproject.toml --all-extras
 ```
 
+## Tests 
+
+Running all tests should be as simple as this, if everything is configured
+correctly in the `pyproject.toml`
+```sh
+pytest
+```
+
+To automatically re-run tests while you are working on them, use
+[`pytest-watcher`](https://github.com/olzhasar/pytest-watcher) (`q` to quit):
+```sh
+ptw .
+```
