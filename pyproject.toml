@@ -22,6 +22,7 @@ dev = [
     "mkdocs>=1.6.1",
     "mkdocstrings[python]>=0.29.1",
     "mike>=2.1.3",
+    "commitizen>=4.7.2",
 ]
 
 [tool.pytest.ini_options]
@@ -44,3 +45,14 @@ exclude_lines = [
 [tool.pytest-watcher]
 now = true # run tests immediately; don't wait for the first file edit
 clear = true # clear the terminal before each test run
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver2"
+version_provider = "pep621"
+update_changelog_on_bump = true
+
+[tool.commitizen.custom_changelog]
+breaking_change_label = "💥 BREAKING CHANGES"
+change_type_map = { feat = "✨ Features", fix = "🐛 Fixes", docs = "📝 Documentation" }
