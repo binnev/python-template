@@ -7,8 +7,10 @@ and division. Each command takes two numbers as input and prints the result to t
 The module relies on the `core.calculator` module for the actual arithmetic operations.
 """
 
+from typing import Optional
 import typer
 from core import calculator
+import core
 app = typer.Typer()
 
 @app.command()
@@ -62,3 +64,20 @@ def divide(a: float, b: float) -> None:
     except ValueError as e:
         typer.echo(f"Error: {e}")
 
+def _version_callback(value: bool) -> None:
+    if value:
+        typer.echo(f"{core.__app_name__} v{core.__version__}")
+        raise typer.Exit()
+
+@app.callback()
+def main(
+    version: Optional[bool] = typer.Option(
+        None,
+        "--version",
+        "-v",
+        help="Show the application's version and exit.",
+        callback=_version_callback,
+        is_eager=True,
+    ),
+) -> None:
+    return  
