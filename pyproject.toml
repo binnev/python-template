@@ -56,4 +56,3 @@ version_files = [
     "pyproject.toml:version",
     "core/__init__.py:__version__",
 ]
-template = "changelog-template.j2"
