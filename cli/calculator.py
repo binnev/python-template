@@ -64,6 +64,7 @@ def divide(a: float, b: float) -> None:
     except ValueError as e:
         typer.echo(f"Error: {e}")
 
+
 def _version_callback(value: bool) -> None:
     if value:
         typer.echo(f"{core.__app_name__} v{core.__version__}")
@@ -80,4 +81,5 @@ def main(
         is_eager=True,
     ),
 ) -> None:
+    """Handles the --version flag"""
     return  
