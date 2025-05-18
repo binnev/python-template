@@ -1,1 +1,24 @@
 site_name: My Docs
+
+theme:
+  name: "readthedocs"
+
+plugins:
+  - search
+  - mkdocstrings
+  - mike
+
+nav:
+  - Home: index.md
+  - Tutorials:
+      - Getting Started: tutorials/getting-started.md
+  - How-To Guides:
+      - Add a Dependency: how-to/add-dependency.md
+      - Build Documentation: how-to/build-docs.md
+  - Reference:
+      - Core:
+          - Calculator: reference/core/calculator.md
+      - CLI:
+          - Calculator: reference/cli/calculator.md
+  - Explanation:
+      - Project Structure: explanation/project-structure.md

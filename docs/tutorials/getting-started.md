@@ -1,0 +1,31 @@
+# Getting Started with Python Template
+
+This tutorial will guide you through setting up and running the Python Template project.
+
+## Prerequisites
+
+- Python 3.14 installed
+- `uv` dependency manager installed
+
+## Steps
+
+1. Clone the repository:
+    ```sh
+    git clone <repository-url>
+    cd python-template
+    ```
+
+2. Install dependencies:
+    ```sh
+    uv pip install -r pyproject.toml --all-extras
+    ```
+
+3. Run the main script:
+    ```sh
+    python main.py
+    ```
+
+You should see the following output:
+```
+Hello from python-template!
+```

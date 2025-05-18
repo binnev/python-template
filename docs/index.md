@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# Welcome to Python Template Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This documentation is structured using the Diátaxis framework to help you navigate and understand the project effectively.
 
-## Commands
+## Table of Contents
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Tutorials
+- [Getting Started](tutorials/getting-started.md)
 
-## Project layout
+### How-To Guides
+- [Add a Dependency](how-to/add-dependency.md)
+- [Build Documentation](how-to/build-docs.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Reference
+- [Calculator Module](reference/calculator.md)
+
+### Explanation
+- [Project Structure](explanation/project-structure.md)
