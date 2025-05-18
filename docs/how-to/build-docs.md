@@ -1,22 +1,21 @@
 # How to Build Documentation
 
-This guide explains how to build the documentation for the project.
+Serve the documentation locally:
+```sh
+mkdocs serve
+```
 
-## Steps
+## Mike 
+We use mike to manage versioning for our documentation. It creates a snapshot of the documentation for each version of the project, allowing users to access the appropriate docs for the version they're using—even if it's an older one.
 
-1. Install MkDocs and its dependencies:
-    ```sh
-    uv pip install -r pyproject.toml --all-extras
-    ```
+### Build new docs version 
+Build the docs for the current project version: 
+```sh 
+mike deploy $(cz version --project)
+```
 
-2. Serve the documentation locally:
-    ```sh
-    mkdocs serve
-    ```
-
-3. Build the documentation:
-    ```sh
-    mkdocs build
-    ```
-
-The built documentation will be available in the `site/` directory.
+Alias the new version of the docs to "latest" and set that as the default docs version.
+```sh
+mike alias $(cz version --project) latest
+mike set-default latest
+```
