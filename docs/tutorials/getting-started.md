@@ -20,12 +20,7 @@ This tutorial will guide you through setting up and running the Python Template 
     uv pip install -r pyproject.toml --all-extras
     ```
 
-3. Run the main script:
+3. Install pre-commit hooks:
     ```sh
-    python main.py
+    pre-commit install
     ```
-
-You should see the following output:
-```
-Hello from python-template!
-```
