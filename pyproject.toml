@@ -56,7 +56,4 @@ version_files = [
     "pyproject.toml:version",
     "core/__init__.py:__version__",
 ]
-
-[tool.commitizen.custom_changelog]
-breaking_change_label = "💥 BREAKING CHANGES"
-change_type_map = { feat = "✨ Features", fix = "🐛 Fixes", docs = "📝 Documentation" }
+template = "changelog-template.j2"
