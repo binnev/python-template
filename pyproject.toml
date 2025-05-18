@@ -54,7 +54,7 @@ version_provider = "pep621"
 update_changelog_on_bump = true
 version_files = [
     "pyproject.toml:version",
-    "src/api/constants.py:__version__",
+    "core/__init__.py:__version__",
 ]
 
 [tool.commitizen.custom_changelog]
