@@ -1,6 +1,6 @@
 # A simple calculator library with basic arithmetic operations
 
-def add(a, b):
+def add(a: float, b: float) -> float:
     """
     Return the sum of two numbers.
 
@@ -13,7 +13,7 @@ def add(a, b):
     """
     return a + b
 
-def subtract(a, b):
+def subtract(a: float, b: float) -> float:
     """
     Return the difference of two numbers.
 
@@ -26,7 +26,7 @@ def subtract(a, b):
     """
     return a - b
 
-def multiply(a, b):
+def multiply(a: float, b: float) -> float:
     """
     Return the product of two numbers.
 
@@ -39,7 +39,7 @@ def multiply(a, b):
     """
     return a * b
 
-def divide(a, b):
+def divide(a: float, b: float) -> float:
     """
     Return the division of two numbers. Raise an error if dividing by zero.
 

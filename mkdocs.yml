@@ -9,11 +9,12 @@ plugins:
   - mike
 
 nav:
-  - Home: index.md
+  - Home: README.md
   - Tutorials:
       - Getting Started: tutorials/getting-started.md
   - How-To Guides:
-      - Add a Dependency: how-to/add-dependency.md
+      - Manage Dependencies: how-to/dependencies.md
+      - Running tests: how-to/testing.md
       - Build Documentation: how-to/build-docs.md
   - Reference:
       - Core:
@@ -22,3 +23,4 @@ nav:
           - Calculator: reference/cli/calculator.md
   - Explanation:
       - Project Structure: explanation/project-structure.md
+      - Aim of the Project: explanation/aim-of-project.md

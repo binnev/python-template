@@ -12,61 +12,49 @@ from core import calculator
 app = typer.Typer()
 
 @app.command()
-def add(a: float, b: float):
+def add(a: float, b: float) -> None:
     """
     Add two numbers.
 
     Args:
         a (float): The first number to add.
         b (float): The second number to add.
-
-    Returns:
-        None: Prints the result of the addition to the console.
     """
     result = calculator.add(a, b)
     typer.echo(f"The result of addition is: {result}")
 
 @app.command()
-def subtract(a: float, b: float):
+def subtract(a: float, b: float) -> None:
     """
     Subtract two numbers.
 
     Args:
         a (float): The number to subtract from.
         b (float): The number to subtract.
-
-    Returns:
-        None: Prints the result of the subtraction to the console.
     """
     result = calculator.subtract(a, b)
     typer.echo(f"The result of subtraction is: {result}")
 
 @app.command()
-def multiply(a: float, b: float):
+def multiply(a: float, b: float) -> None:
     """
     Multiply two numbers.
 
     Args:
         a (float): The first number to multiply.
         b (float): The second number to multiply.
-
-    Returns:
-        None: Prints the result of the multiplication to the console.
     """
     result = calculator.multiply(a, b)
     typer.echo(f"The result of multiplication is: {result}")
 
 @app.command()
-def divide(a: float, b: float):
+def divide(a: float, b: float) -> None:
     """
     Divide two numbers.
 
     Args:
         a (float): The numerator.
         b (float): The denominator.
-
-    Returns:
-        None: Prints the result of the division to the console. If division by zero occurs, an error message is printed.
     """
     try:
         result = calculator.divide(a, b)
