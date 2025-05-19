@@ -1,4 +1,4 @@
 # Calculator Module
 
-::: core.calculator
+::: src.core.calculator
 

@@ -60,7 +60,6 @@ def multiply(a: float, b: float) -> None:
 def divide(a: float, b: float) -> None:
     """
     Divide two numbers.
-
     Args:
         a (float): The numerator.
         b (float): The denominator.

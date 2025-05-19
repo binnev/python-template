@@ -1,3 +1,3 @@
 # CLI Calculator Module
 
-::: cli.calculator
+::: src.cli.calculator

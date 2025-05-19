@@ -1,12 +1,49 @@
 site_name: My Docs
 
 theme:
-  name: "readthedocs"
+  name: "material"
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
 
 plugins:
   - search
-  - mkdocstrings
+  - mkdocstrings:
+      enabled: true
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: true
+            show_root_heading: true
+            docstring_style: google
+            show_category_heading: false
+            show_bases: false
+            docstring_section_style: spacy
+            members_order: source
+
   - mike
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - Home: README.md
@@ -25,3 +62,7 @@ nav:
           - Calculator: reference/core/calculator.md
       - CLI:
           - Calculator: reference/cli/calculator.md
+
+watch:
+  - docs
+  - src # also hot reload when editing docstrings

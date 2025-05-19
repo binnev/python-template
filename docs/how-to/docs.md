@@ -22,3 +22,51 @@ Alias the new version of the docs to "latest" and set that as the default docs v
 mike alias $(cz version --project) latest
 mike set-default latest
 ```
+
+## Diagrams 
+Mermaid diagrams can be written in a `mermaid` code block, and they will be rendered as diagrams: 
+
+```mermaid
+graph LR
+    hello --> world
+    world --> again
+    again --> hello
+```
+
+## Tooltips 
+
+Tooltips and other such "admonitions" can be written with a `!!!` block:
+
+!!! note
+    This is a note.
+
+!!! tip
+    This is a tip.
+
+!!! warning
+    Be careful!
+
+!!! danger
+    This is dangerous!
+
+## Code blocks 
+
+```python 
+def divide(a: float, b: float) -> float:
+    """
+    Return the division of two numbers. Raise an error if dividing by zero.
+
+    Args:
+        a (float): The numerator.
+        b (float): The denominator.
+
+    Returns:
+        float: The result of the division.
+
+    Raises:
+        ValueError: If the denominator is zero.
+    """
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+    return a / b
+```
