@@ -1,3 +1,9 @@
+## 0.4.0 (2025-05-19)
+
+### Feat
+
+- moved cli and core into src folder
+
 ## 0.3.2 (2025-05-18)
 
 ### Fix
