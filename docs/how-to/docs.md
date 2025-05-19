@@ -23,9 +23,13 @@ mike alias $(cz version --project) latest
 mike set-default latest
 ```
 
-## Diagrams 
+## Writing 
+These are some tools you can use to enrich the documentation. 
+
+### Diagrams 
 Mermaid diagrams can be written in a `mermaid` code block, and they will be rendered as diagrams: 
 
+Graphs: 
 ```mermaid
 graph LR
     hello --> world
@@ -33,9 +37,56 @@ graph LR
     again --> hello
 ```
 
-## Tooltips 
+Sequence diagrams: 
+``` mermaid
+sequenceDiagram
+  autonumber
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
+Class diagrams:
+``` mermaid
+classDiagram
+  Person <|-- Student
+  Person <|-- Professor
+  Person : +String name
+  Person : +String phoneNumber
+  Person : +String emailAddress
+  Person: +purchaseParkingPass()
+  Address "1" <-- "0..1" Person:lives at
+  class Student{
+    +int studentNumber
+    +int averageMark
+    +isEligibleToEnrol()
+    +getSeminarsTaken()
+  }
+  class Professor{
+    +int salary
+  }
+  class Address{
+    +String street
+    +String city
+    +String state
+    +int postalCode
+    +String country
+    -validate()
+    +outputAsLabel()  
+  }
+```
+### Tooltips 
 
 Tooltips and other such "admonitions" can be written with a `!!!` block:
+```
+!!! note
+    This is a note.
+```
 
 !!! note
     This is a note.
@@ -49,9 +100,11 @@ Tooltips and other such "admonitions" can be written with a `!!!` block:
 !!! danger
     This is dangerous!
 
-## Code blocks 
+### Code blocks 
+Specify python with the "py" shortcode after the 3 backticks.
+You can highlight lines too with `hl_lines="3-5"`
 
-```python 
+```py hl_lines="3-5"
 def divide(a: float, b: float) -> float:
     """
     Return the division of two numbers. Raise an error if dividing by zero.
@@ -70,3 +123,43 @@ def divide(a: float, b: float) -> float:
         raise ValueError("Cannot divide by zero.")
     return a / b
 ```
+
+Inline code blocks can be highlighted for specific languages by prefixing `#!python`: `#!python lambda a: print(a)`
+
+### Content tabs 
+Content tabs can be used to show different versions of something in a tabbed layout:
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
+It doesn't have to be code: 
+=== "Unordered list"
+
+    - Sed sagittis eleifend rutrum
+    - Donec vitae suscipit est
+    - Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci

@@ -18,7 +18,7 @@
 
 ## 0.3.0 (2025-05-18)
 
-### Feat
+### Featq
 
 - custom changelog template
 
