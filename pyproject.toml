@@ -4,19 +4,16 @@ version = "0.3.2"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = [
-    "httpx>=0.28.1",
-    "pytest-better-parametrize>=0.2.0",
-    "typer>=0.15.4",
-]
+dependencies = ["httpx>=0.28.1", "typer>=0.15.4"]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.3.5",
-    "pytest-asyncio==1.0.0a1",      # This version handles the `asyncio.get_event_loop_policy` deprecation in python3.14
+    "pytest-asyncio==1.0.0a1",          # This version handles the `asyncio.get_event_loop_policy` deprecation in python3.14
     "pytest-dotenv>=0.5.2",
     "pytest-watcher>=0.4.3",
     "pytest-cov>=6.1.1",
+    "pytest-better-parametrize>=0.2.0",
     "coverage>=7.8.0",
     "ruff>=0.11.10",
     "mkdocs>=1.6.1",
@@ -43,7 +40,7 @@ exclude_lines = [
 ]
 
 [tool.pytest-watcher]
-now = true # run tests immediately; don't wait for the first file edit
+now = true   # run tests immediately; don't wait for the first file edit
 clear = true # clear the terminal before each test run
 
 [tool.commitizen]
@@ -52,7 +49,4 @@ tag_format = "$version"
 version_scheme = "semver2"
 version_provider = "pep621"
 update_changelog_on_bump = true
-version_files = [
-    "pyproject.toml:version",
-    "core/__init__.py:__version__",
-]
+version_files = ["pyproject.toml:version", "core/__init__.py:__version__"]

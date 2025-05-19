@@ -1,4 +1,4 @@
-# Dependency management 
+# Dependencies 
 Use `uv` -- it's basically a Cargo for python, written in rust
 
 

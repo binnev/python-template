@@ -1,7 +1,14 @@
 # Python project template 
+This project is a template for new python projects. It contains up-to-date tooling for tests, docs, versioning, and dependency management. 
 
-This documentation is structured using the [Diátaxis framework](https://diataxis.fr/) to help you navigate and understand the project effectively.
+In a nutshell, the idea is that you clone/fork this project, and then modify it to suit your new project. The [Getting Started](tutorials/getting-started.md) section provides a step-by-step guide. 
 
-If you are setting up a new project using this template, you probably want to have a look at the [Getting Started](tutorials/getting-started.md) section.
+## Documentation
 
+The documentation provides a detailed guide to the project. It is structured using the [Diátaxis framework](https://diataxis.fr/) to help you navigate and understand the project effectively. This framework consists of 4 categories:
+
+1. **Tutorials**: Guides that teach a concept.
+2. **How-To Guides**: Step-by-step instructions to achieve specific goals or tasks.
+3. **Reference**: Technical descriptions of the project's components and APIs.
+4. **Explanations**: In-depth discussions of concepts and motivations. 
 

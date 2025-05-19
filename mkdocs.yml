@@ -11,16 +11,17 @@ plugins:
 nav:
   - Home: README.md
   - Tutorials:
-      - Getting Started: tutorials/getting-started.md
+      - tutorials/getting-started.md
   - How-To Guides:
-      - Manage Dependencies: how-to/dependencies.md
-      - Running tests: how-to/testing.md
-      - Build Documentation: how-to/build-docs.md
+      - how-to/dependencies.md
+      - how-to/testing.md
+      - how-to/docs.md
+      - how-to/versioning.md
+  - Explanation:
+      - Aim of the Project: explanation/aim.md
+      - Project Structure: explanation/structure.md
   - Reference:
       - Core:
           - Calculator: reference/core/calculator.md
       - CLI:
           - Calculator: reference/cli/calculator.md
-  - Explanation:
-      - Project Structure: explanation/project-structure.md
-      - Aim of the Project: explanation/aim-of-project.md
