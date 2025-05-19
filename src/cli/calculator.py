@@ -11,8 +11,8 @@ from typing import Optional
 
 import typer
 
-import core
-from core import calculator
+from src import core
+from src.core import calculator
 
 app = typer.Typer()
 
