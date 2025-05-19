@@ -8,10 +8,14 @@ The module relies on the `core.calculator` module for the actual arithmetic oper
 """
 
 from typing import Optional
+
 import typer
-from core import calculator
+
 import core
+from core import calculator
+
 app = typer.Typer()
+
 
 @app.command()
 def add(a: float, b: float) -> None:
@@ -25,6 +29,7 @@ def add(a: float, b: float) -> None:
     result = calculator.add(a, b)
     typer.echo(f"The result of addition is: {result}")
 
+
 @app.command()
 def subtract(a: float, b: float) -> None:
     """
@@ -37,6 +42,7 @@ def subtract(a: float, b: float) -> None:
     result = calculator.subtract(a, b)
     typer.echo(f"The result of subtraction is: {result}")
 
+
 @app.command()
 def multiply(a: float, b: float) -> None:
     """
@@ -48,6 +54,7 @@ def multiply(a: float, b: float) -> None:
     """
     result = calculator.multiply(a, b)
     typer.echo(f"The result of multiplication is: {result}")
+
 
 @app.command()
 def divide(a: float, b: float) -> None:
@@ -70,6 +77,7 @@ def _version_callback(value: bool) -> None:
         typer.echo(f"{core.__app_name__} v{core.__version__}")
         raise typer.Exit()
 
+
 @app.callback()
 def main(
     version: Optional[bool] = typer.Option(
@@ -82,4 +90,4 @@ def main(
     ),
 ) -> None:
     """Handles the --version flag"""
-    return  
+    return

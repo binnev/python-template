@@ -15,6 +15,6 @@ repos:
       # Run the formatter.
       - id: ruff-format
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: ""
+    rev: "v1.15.0"
     hooks:
       - id: mypy

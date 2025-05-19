@@ -1,1 +1,1 @@
-from .calculator import app
+from .calculator import app as app
