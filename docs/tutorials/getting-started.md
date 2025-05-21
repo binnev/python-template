@@ -2,11 +2,6 @@
 
 This tutorial will guide you through setting up and running the Python Template project.
 
-## Prerequisites
-
-- Python 3.14 installed
-- `uv` dependency manager installed
-
 ## Steps
 
 1. Clone the repository:
