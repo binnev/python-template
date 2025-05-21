@@ -40,10 +40,9 @@
         uv
       ];
       shellHook = ''
-        python --version
-        uv venv 
-        source .venv/bin/activate
-        uv pip install -r pyproject.toml --all-extras
+        uv venv --quiet
+        source .venv/bin/activate 
+        uv pip install -r pyproject.toml --all-extras --quiet
       '';
     };
   };
