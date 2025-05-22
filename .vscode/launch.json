@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "FastAPI",
+            "name": "Debug API",
             "type": "debugpy",
             "request": "launch",
             "module": "uvicorn",
