@@ -58,11 +58,7 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Build Documentation</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#mike">Mike</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#build-new-docs-version">Build new docs version</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
     </li>
     </ul>
                   </li>
@@ -114,14 +110,26 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="how-to-build-documentation">How to Build Documentation</h1>
-<p>Serve the documentation locally:</p>
-<pre><code class="language-sh">mkdocs serve
-</code></pre>
-<h2 id="mike">Mike</h2>
-<p>We use <code>mike</code> to manage versioned docs. Mike keeps a snapshot of the docs at every version of the project. This means that users who are using an older version can view the older version of the docs. </p>
-<h3 id="build-new-docs-version">Build new docs version</h3>
-<pre><code class="language-sh">mike deploy $(cz version --project)
-</code></pre>
+<p>This guide explains how to build the documentation for the project.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Install MkDocs and its dependencies:
+    <code>sh
+    uv pip install -r pyproject.toml --all-extras</code></p>
+</li>
+<li>
+<p>Serve the documentation locally:
+    <code>sh
+    mkdocs serve</code></p>
+</li>
+<li>
+<p>Build the documentation:
+    <code>sh
+    mkdocs build</code></p>
+</li>
+</ol>
+<p>The built documentation will be available in the <code>site/</code> directory.</p>
               
             </div>
           </div><footer>
