@@ -1,3 +1,13 @@
+## 0.7.0 (2025-05-22)
+
+### Feat
+
+- **api**: brand new feature!!
+
+### Fix
+
+- **api**: fix bug
+
 ## 0.6.0 (2025-05-22)
 
 ### Feat
