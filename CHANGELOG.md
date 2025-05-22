@@ -1,3 +1,9 @@
+## 0.6.0 (2025-05-22)
+
+### Feat
+
+- moved calculator endpoints to separate file and updated docs
+
 ## 0.5.0 (2025-05-22)
 
 ### Feat
