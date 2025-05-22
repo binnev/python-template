@@ -13,7 +13,6 @@ nav:
       - how-to/run-api.md
   - Explanation:
       - Aim of the Project: explanation/aim.md
-      - Project Structure: explanation/structure.md
   - Reference:
       - Core: reference/core.md
       - CLI: reference/cli.md
