@@ -1,5 +1,29 @@
 site_name: My Docs
 
+nav:
+  - Home: README.md
+  - Tutorials:
+      - tutorials/getting-started.md
+  - How-To Guides:
+      - how-to/dependencies.md
+      - how-to/testing.md
+      - how-to/docs.md
+      - how-to/versioning.md
+  - Explanation:
+      - Aim of the Project: explanation/aim.md
+      - Project Structure: explanation/structure.md
+  - Reference:
+      - Core:
+          - Calculator: reference/core/calculator.md
+      - CLI:
+          - Calculator: reference/cli/calculator.md
+      - API:
+          - Calculator: reference/api/app.md
+
+watch:
+  - docs
+  - src # also hot reload when editing docstrings
+
 theme:
   name: "material"
   palette:
@@ -56,25 +80,3 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-
-nav:
-  - Home: README.md
-  - Tutorials:
-      - tutorials/getting-started.md
-  - How-To Guides:
-      - how-to/dependencies.md
-      - how-to/testing.md
-      - how-to/docs.md
-      - how-to/versioning.md
-  - Explanation:
-      - Aim of the Project: explanation/aim.md
-      - Project Structure: explanation/structure.md
-  - Reference:
-      - Core:
-          - Calculator: reference/core/calculator.md
-      - CLI:
-          - Calculator: reference/cli/calculator.md
-
-watch:
-  - docs
-  - src # also hot reload when editing docstrings
