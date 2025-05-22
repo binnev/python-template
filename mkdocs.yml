@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Python template
 repo_url: https://github.com/binnev/python-template/
 repo_name: binnev/python-template
 
@@ -26,6 +26,8 @@ watch:
 
 theme:
   name: "material"
+  font:
+    code: Source Code Pro
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -46,6 +48,8 @@ theme:
     - content.code.copy # enables a copy button in code blocks
     - content.code.select # allows user to link to line ranges
     - content.code.annotate # allows placing annotations inside code blocks
+  icon:
+    logo: material/toolbox
 
 plugins:
   - search
