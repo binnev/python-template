@@ -14,14 +14,29 @@ We use `mike` to manage versioning for our documentation. It creates a snapshot 
 ### Build new docs version 
 Build the docs for the current project version: 
 ```sh 
-mike deploy $(cz version --project)
+mike deploy $(cz version --project) latest --update-aliases
 ```
 
-Alias the new version of the docs to "latest" and set that as the default docs version.
+To push your new docs version: 
+```sh 
+mike deploy $(cz version --project) latest --update-aliases
+```
+
+The first time you use Mike, you'll need to tell it which version is the default (the one it shows when you load the docs main page). We'll set it to the "default" alias:
 ```sh
-mike alias $(cz version --project) latest
 mike set-default latest
 ```
+
+To list the available docs versions: 
+```sh
+mike list 
+```
+
+To view the versioned docs locally (with a drop-down to select which docs version you want): 
+```sh 
+mike serve 
+```
+
 
 ## Writing 
 These are some tools you can use to enrich the documentation. 
