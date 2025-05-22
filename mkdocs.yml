@@ -9,16 +9,15 @@ nav:
       - how-to/testing.md
       - how-to/docs.md
       - how-to/versioning.md
+      - how-to/run-cli.md
+      - how-to/run-api.md
   - Explanation:
       - Aim of the Project: explanation/aim.md
       - Project Structure: explanation/structure.md
   - Reference:
-      - Core:
-          - Calculator: reference/core/calculator.md
-      - CLI:
-          - Calculator: reference/cli/calculator.md
-      - API:
-          - Calculator: reference/api/app.md
+      - Core: reference/core.md
+      - CLI: reference/cli.md
+      - API: reference/api.md
 
 watch:
   - docs
