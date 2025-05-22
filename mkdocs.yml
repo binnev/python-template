@@ -80,6 +80,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+# This enables the version drop-down in mkdocs material theme
 extra:
   version:
     provider: mike
