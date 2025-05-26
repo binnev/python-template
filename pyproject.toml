@@ -18,6 +18,8 @@ dev = [
     "pytest-dotenv>=0.5.2",
     "pytest-watcher>=0.4.3",
     "pytest-cov>=6.1.1",
+    "pytest-xdist>=3.6.1",
+    "pytest-sugar>=1.0.0",
     "pytest-better-parametrize>=0.2.0",
     "coverage>=7.8.0",
     "ruff>=0.11.10",
@@ -34,7 +36,7 @@ dev = [
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "session"
-addopts = "-p no:cacheprovider"
+addopts = ["-p no:cacheprovider"]
 testpaths = ["tests"]
 
 [tool.coverage.report]
@@ -49,8 +51,13 @@ exclude_lines = [
 ]
 
 [tool.pytest-watcher]
-now = true   # run tests immediately; don't wait for the first file edit
-clear = true # clear the terminal before each test run
+now = true           # run tests immediately; don't wait for the first file edit
+clear = true         # clear the terminal before each test run
+delay = 0.2
+runner = "pytest"
+runner_args = []
+patterns = ["*.py"]
+ignore_patterns = []
 
 [tool.commitizen]
 name = "cz_conventional_commits"
@@ -58,7 +65,7 @@ tag_format = "$version"
 version_scheme = "semver2"
 version_provider = "pep621"
 update_changelog_on_bump = true
-version_files = ["pyproject.toml:version", "core/__init__.py:__version__"]
+version_files = ["pyproject.toml:version", "src/core/__init__.py:__version__"]
 
 [tool.ruff]
 line-length = 80
