@@ -4,6 +4,8 @@ repo_name: binnev/python-template
 
 nav:
   - Home: README.md
+  - Explanation:
+      - Aim of the Project: explanation/aim.md
   - Tutorials:
       - tutorials/getting-started.md
   - How-To Guides:
@@ -13,8 +15,6 @@ nav:
       - how-to/versioning.md
       - how-to/run-cli.md
       - how-to/run-api.md
-  - Explanation:
-      - Aim of the Project: explanation/aim.md
   - Reference:
       - Core: reference/core.md
       - CLI: reference/cli.md
