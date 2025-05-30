@@ -17,9 +17,6 @@ This tutorial will guide you through setting up and running the Python Template 
     If you are not using nix and direnv, follow these steps to setup the project
 
     ## Steps
-    !!! note
-        These steps only apply if you are not using `nix` and/or `direnv`
-
     1. Clone the repository:
     ```sh
     git clone <repository-url>
