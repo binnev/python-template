@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.8.1 (2025-05-31)
+
+### Fix
+
+- **build**: commitizen should use git-cliff for changelogs
+
 ## [0.8.0] - 2025-05-31
 
 ### 🚀 Features
