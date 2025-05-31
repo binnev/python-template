@@ -48,7 +48,6 @@ cz bump && mask docs bump
 git-cliff -o CHANGELOG.md
 ```
 
-
 Positional arguments
 
 These are defined beside the command name within (round_brackets). They are required arguments that must be supplied for the command to run. The argument name is injected into the script's scope as an environment variable.
