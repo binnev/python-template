@@ -64,9 +64,12 @@ name = "cz_conventional_commits"
 tag_format = "$version"
 version_scheme = "semver2"
 version_provider = "pep621"
-# use git-cliff instead
-update_changelog_on_bump = false
+update_changelog_on_bump = true
 version_files = ["pyproject.toml:version", "src/core/__init__.py:__version__"]
+
+[tool.commitizen.changelog]
+path = "CHANGELOG.md"
+changelog_command = "git cliff -o CHANGELOG.md"
 
 [tool.ruff]
 line-length = 80

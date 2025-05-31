@@ -36,6 +36,5 @@ mkdocs serve
 
 ```sh
 cz bump 
-git-cliff -o CHANGELOG.md
 mike deploy $(cz version --project) latest --update-aliases
 ```
