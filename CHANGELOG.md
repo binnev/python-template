@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.9.1 (2025-05-31)
+
+### Fix
+
+- formatting in maskfile
+
 ## [0.9.0] - 2025-05-31
 
 ### 🚀 Features
