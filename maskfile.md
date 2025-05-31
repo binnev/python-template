@@ -37,7 +37,7 @@ mike set-default latest
 > Create a new version of the project, docs, and changelog 
 
 ```sh
-git-cliff -o changelog --bump \
+git-cliff -o CHANGELOG.md --bump \
     && git add CHANGELOG.md \
     && cz bump \
     && mask docs bump
