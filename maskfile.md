@@ -3,7 +3,6 @@ Mask is a modern markdown-based replacement for `make` and `Makefile`. The code 
 
 See the docs: https://github.com/jacobdeichert/mask
 
-
 <!-- A heading defines the command's name -->
 ## test
 
