@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.9.0 (2025-05-31)
+
+### Feat
+
+- **build**: more maskfile entries
+- **build**: added more examples to maskfile
+
 ## 0.8.1 (2025-05-31)
 
 ### Fix
