@@ -38,6 +38,7 @@
       buildInputs = with pkgs; [
         myPython
         uv
+        git-cliff
       ];
       shellHook = ''
         uv venv --quiet
