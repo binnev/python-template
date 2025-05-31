@@ -38,7 +38,8 @@ mike set-default latest
 
 ```sh
 git-cliff -o changelog --bump \
-&& cz bump \
+    && git add CHANGELOG.md \
+    && cz bump \
     && mask docs bump
 ```
 
