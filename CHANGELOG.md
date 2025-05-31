@@ -2,11 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.8.0] - 2025-05-31
 
 ### 🚀 Features
 
 - Parallelised test suite
+- *(build)* Added git-cliff for changelog generation
+- *(build)* Added maskfile
 
 ### 📚 Documentation
 
