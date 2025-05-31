@@ -2,18 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.9.0 (2025-05-31)
+## [0.9.0] - 2025-05-31
 
-### Feat
+### 🚀 Features
 
-- **build**: more maskfile entries
-- **build**: added more examples to maskfile
+- *(build)* Added more examples to maskfile
+- *(build)* More maskfile entries
 
-## 0.8.1 (2025-05-31)
+## [0.8.1] - 2025-05-31
 
-### Fix
+### 🐛 Bug Fixes
 
-- **build**: commitizen should use git-cliff for changelogs
+- *(build)* Commitizen should use git-cliff for changelogs
 
 ## [0.8.0] - 2025-05-31
 
