@@ -67,9 +67,5 @@ version_provider = "pep621"
 update_changelog_on_bump = true
 version_files = ["pyproject.toml:version", "src/core/__init__.py:__version__"]
 
-[tool.commitizen.changelog]
-path = "CHANGELOG.md"
-changelog_command = "git cliff -o CHANGELOG.md"
-
 [tool.ruff]
 line-length = 80
