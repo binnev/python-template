@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2025-05-31
+
+### 🚀 Features
+
+- *(maskfile)* [**breaking**] Removed a space
+
 ## [0.9.3] - 2025-05-31
 
 ### 🐛 Bug Fixes
