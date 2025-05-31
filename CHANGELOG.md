@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.9.2 (2025-05-31)
+
+### Fix
+
+- **build**: update bump command again
+- **build**: update mask bump command
+- **build**: removed nonexistent commitizen settings...
+
 ## 0.9.1 (2025-05-31)
 
 ### Fix
