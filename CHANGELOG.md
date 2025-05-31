@@ -2,19 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.9.2 (2025-05-31)
+## [0.9.3] - 2025-05-31
 
-### Fix
+### 🐛 Bug Fixes
 
-- **build**: update bump command again
-- **build**: update mask bump command
-- **build**: removed nonexistent commitizen settings...
+- *(build)* Commitizen should no longer build changelog
+- *(build)* Maskfile
 
-## 0.9.1 (2025-05-31)
+## [0.9.2] - 2025-05-31
 
-### Fix
+### 🐛 Bug Fixes
 
-- formatting in maskfile
+- *(build)* Removed nonexistent commitizen settings...
+- *(build)* Update mask bump command
+- *(build)* Update bump command again
+
+## [0.9.1] - 2025-05-31
+
+### 🐛 Bug Fixes
+
+- Formatting in maskfile
+
+### ⚙️ Miscellaneous Tasks
+
+- Fix changelog format
 
 ## [0.9.0] - 2025-05-31
 
