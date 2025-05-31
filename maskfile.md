@@ -37,7 +37,9 @@ mike set-default latest
 > Create a new version of the project, docs, and changelog 
 
 ```sh
-cz bump && mask docs bump
+cz bump --local-version \
+    && mask changelog \
+    && mask docs bump
 ```
 
 ## changelog 
