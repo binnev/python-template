@@ -38,7 +38,8 @@
       buildInputs = with pkgs; [
         myPython
         uv
-        git-cliff
+        git-cliff  # changelog generator 
+        mask # markdown-based replacement for make
       ];
       shellHook = ''
         uv venv --quiet
