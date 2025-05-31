@@ -1,5 +1,5 @@
 # Project tasks
-Mask is a modern markdown-based replacement for `make` and `Makefile`. The code blocks defined in this file are runnable via the `mask` CLI, and the surrounding markdown serves as the documentation.
+Mask is a modern markdown-based replacement for `make` and `Makefile`. The code blocks defined in this file are runnable via the `mask` CLI (try `mask --help`), and the surrounding markdown serves as the documentation.
 
 See the docs: https://github.com/jacobdeichert/mask
 
@@ -9,7 +9,6 @@ See the docs: https://github.com/jacobdeichert/mask
 
 <!-- A blockquote defines the command's description -->
 > Run all the tests
-
 
 <!-- A code block defines the script to be executed -->
 ```sh
@@ -24,14 +23,31 @@ pytest -n 6
 mkdocs serve 
 ```
 
+### docs bump 
+
+> Create a new version of the docs
+
+```sh 
+mike deploy $(cz version --project) latest --update-aliases
+mike set-default latest
+```
+
 ## bump
 
 > Create a new version of the project, docs, and changelog 
 
 ```sh
-cz bump 
-mike deploy $(cz version --project) latest --update-aliases
+cz bump && mask docs bump
 ```
+
+## changelog 
+
+> Update the changelog with `git-cliff`
+
+```sh
+git-cliff -o CHANGELOG.md
+```
+
 
 Positional arguments
 
