@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-06-01
+
+### 🚀 Features
+
+- *(docs)* Added maskfile to docs
+
+
 ## [1.1.2] - 2025-06-01
 
 ### 🐛 Bug Fixes
