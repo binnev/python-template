@@ -28,7 +28,7 @@ mkdocs serve
 
 ```sh 
 mike deploy $(cz version --project) latest --update-aliases
-mike set-default latest
+mike set-default latest --push
 ```
 
 ## bump
