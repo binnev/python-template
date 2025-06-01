@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2025-06-01
+
+### 🐛 Bug Fixes
+
+- *(changelog)* Wrap breaking changes lines
+
+
+- *(build)* Tweak extensions and git hooks
+
+
+- *(build)* Ruff config
+
+
+### 🎨 Styling
+
+- Comment
+
+
 ## [1.1.0] - 2025-05-31
 
 ### 🚀 Features
