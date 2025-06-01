@@ -1,10 +1,12 @@
 """
 This module provides CLI commands for performing basic arithmetic operations.
 
-It uses the `typer` library to define commands for addition, subtraction, multiplication,
-and division. Each command takes two numbers as input and prints the result to the console.
+It uses the `typer` library to define commands for addition, subtraction,
+multiplication, and division. Each command takes two numbers as input and prints
+the result to the console.
 
-The module relies on the `core.calculator` module for the actual arithmetic operations.
+The module relies on the `core.calculator` module for the actual arithmetic
+operations.
 """
 
 from typing import Optional
