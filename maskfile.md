@@ -1,7 +1,9 @@
-# Project tasks
-Mask is a modern markdown-based replacement for `make` and `Makefile`. The code blocks defined in this file are runnable via the `mask` CLI (try `mask --help`), and the surrounding markdown serves as the documentation.
+# Run project tasks
+This file defines and describes tasks that can be run with `mask`. 
 
-See the docs: https://github.com/jacobdeichert/mask
+Mask is a modern markdown-based replacement for `make`. The code blocks defined in this file are runnable via the `mask` CLI (try `mask --help`), and the surrounding markdown serves as the documentation.
+
+See the [mask docs](https://github.com/jacobdeichert/mask) for more information.
 
 <!-- A heading defines the command's name -->
 ## test
