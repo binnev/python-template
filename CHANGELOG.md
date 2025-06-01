@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2025-06-01
+
+### 🐛 Bug Fixes
+
+- *(build)* Fixed docs bump command
+  - This should work even on a clean project with no "latest" version alias
+
 ## [1.1.1] - 2025-06-01
 
 ### 🐛 Bug Fixes
