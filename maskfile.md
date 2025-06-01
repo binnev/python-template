@@ -27,8 +27,8 @@ mkdocs serve
 > Create a new version of the docs
 
 ```sh 
-mike deploy $(cz version --project) latest --update-aliases
-mike set-default latest --push
+mike set-default latest --allow-undefined
+mike deploy $(cz version --project) latest --update-aliases --push
 ```
 
 ## bump
