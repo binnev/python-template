@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.0.1] - 2025-06-02
+
+### 🐛 Bug Fixes
+
+- *(changelog)* Only show breaking description if it's different to the commit message
+
+
 ## [5.0.0] - 2025-06-02
 
 ### 🐛 Bug Fixes
@@ -15,7 +22,7 @@ All notable changes to this project will be documented in this file.
 
 - [**breaking**] Removed a space (#6)
 
-  - **BREAKING CHANGE:** removed a space (#6) 
+
 ## [3.0.0] - 2025-06-02
 
 ### 🚀 Features
@@ -25,7 +32,7 @@ All notable changes to this project will be documented in this file.
   - **BREAKING CHANGE:** description of the breaking change 
 - [**breaking**] Only commit message
 
-  - **BREAKING CHANGE:** only commit message 
+
 - [**breaking**] Commit message without bang
 
   - **BREAKING CHANGE:** only breaking description 
@@ -56,7 +63,7 @@ All notable changes to this project will be documented in this file.
 
 - [**breaking**] Added breaking change to pr template (#5)
 
-  - **BREAKING CHANGE:** added breaking change to pr template (#5) 
+
 ### 🐛 Bug Fixes
 
 - *(github)* Remove double pr lint trigger (#4)
