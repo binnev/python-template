@@ -48,6 +48,7 @@ git-cliff -o CHANGELOG.md --bump \
 > Release the current version to PyPI
 
 ```sh 
+mask release cleanup
 python -m build \
 && twine check dist/* \
 && twine upload --repository testpypi dist/* --verbose \
