@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-06-02
+
+### 🚀 Features
+
+- *(docs)* Linked to online docs
+
+
 ## [1.2.2] - 2025-06-02
 
 ### 🐛 Bug Fixes
