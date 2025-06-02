@@ -65,7 +65,7 @@ rm -rf dist/
 ```
 
 ## ask (prompt)
-> Ask the user a yes/no question (useful)
+> Ask the user a yes/no question (useful for scripting)
 
 Returns a non-zero exit code if the answer is not "y", 
 
