@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.2] - 2025-06-02
+
+### 🐛 Bug Fixes
+
+- *(build)* Always remove the dist folder
+
+
 ## [1.2.1] - 2025-06-02
 
 ### 🐛 Bug Fixes
