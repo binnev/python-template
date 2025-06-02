@@ -39,9 +39,41 @@ mike deploy $(cz version --project) latest --update-aliases --push
 
 ```sh
 git-cliff -o CHANGELOG.md --bump \
-    && git add CHANGELOG.md \
-    && cz bump \
-    && mask docs bump
+&& git add CHANGELOG.md \
+&& cz bump \
+&& mask docs bump
+```
+
+## release 
+> Release the current version to PyPI
+
+```sh 
+python -m build \
+&& twine check dist/* \
+&& twine upload --repository testpypi dist/* --verbose \
+&& mask ask "Does the TestPyPI release look ok?" \
+&& twine upload --repository pypi dist/* --verbose
+mask release cleanup
+```
+
+### cleanup 
+> Clean up build artifacts
+
+```sh
+rm -rf dist/
+```
+
+## ask (prompt)
+> Ask the user a yes/no question 
+
+Returns a non-zero exit code if the answer is not "y", 
+
+```sh
+read -r -p "$prompt [y/N]: " response
+if [[ ! "$response" =~ ^[Yy]$ ]]; then
+echo "Aborted."
+exit 1
+fi
 ```
 
 ## changelog 
