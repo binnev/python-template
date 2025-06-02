@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.0.0] - 2025-06-02
+
+### 🐛 Bug Fixes
+
+- [**breaking**] Added space (#7)
+  - * fix: added the space
+  - **BREAKING CHANGE:** the space is back  * style: formatting 
 ## [4.0.0] - 2025-06-02
 
 ### 🚀 Features
