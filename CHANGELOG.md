@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0] - 2025-06-02
+
+### 🚀 Features
+
+- *(github)* Github action to check PR title (#2)
+  - * feat(github): github action to check PR title  * fix(github): fiddling
+
+- Pr template (#3)
+  - * feat: added pull request template  * fix: pr template
+
+- [**breaking**] Added breaking change to pr template (#5)
+
+  - **BREAKING CHANGE:** added breaking change to pr template (#5) 
+### 🐛 Bug Fixes
+
+- *(github)* Remove double pr lint trigger (#4)
+
+
 ## [1.3.1] - 2025-06-02
 
 ### 🐛 Bug Fixes
