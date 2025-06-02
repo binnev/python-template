@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.0.0] - 2025-06-02
+
+### 🚀 Features
+
+- [**breaking**] Removed a space (#6)
+
+  - **BREAKING CHANGE:** removed a space (#6) 
 ## [3.0.0] - 2025-06-02
 
 ### 🚀 Features
