@@ -1,7 +1,7 @@
 # Python project template 
 This project is a template for new python projects. It contains up-to-date tooling for tests, docs, versioning, and dependency management. 
 
-In a nutshell, the idea is that you clone/fork this project, and then modify it to suit your new project. The [`docs/how-to/getting-started.md`](tutorials/getting-started.md) page provides a step-by-step guide. 
+In a nutshell, the idea is that you clone/fork this project, and then modify it to suit your new project. The [Getting Started](https://binnev.github.io/python-template/latest/tutorials/getting-started/) page provides a step-by-step guide. 
 
 ## Documentation
 To view the documentation, run: 
