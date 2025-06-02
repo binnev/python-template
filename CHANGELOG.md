@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] - 2025-06-02
+
+### 🚀 Features
+
+- [**breaking**] Commit message
+  - foo bar bar
+  - **BREAKING CHANGE:** description of the breaking change 
+- [**breaking**] Only commit message
+
+  - **BREAKING CHANGE:** only commit message 
+- [**breaking**] Commit message without bang
+
+  - **BREAKING CHANGE:** only breaking description 
+### 🐛 Bug Fixes
+
+- *(changelog)* Trying again
+
+
+- *(changelog)* Again
+
+
 ## [2.0.1] - 2025-06-02
 
 ### 🐛 Bug Fixes
