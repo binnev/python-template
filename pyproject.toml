@@ -2,7 +2,7 @@
 urls = { Homepage = "https://github.com/binnev/python-template" }
 
 name = "binnev-python-template"
-version = "1.2.0"
+version = "1.2.1"
 authors = [{ name = "Robin Neville", email = "robin.m.neville@gmail.com" }]
 description = "Add your description here"
 readme = "README.md"
