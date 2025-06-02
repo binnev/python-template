@@ -26,7 +26,7 @@ body = """
     {% if commit.breaking %}[**breaking**] {% endif %}\
     {{ commit.message | upper_first }}
 {% if commit.body %}  - {{ commit.body | trim | replace(from="\n", to=" ") }}{% endif %}
-{% if commit.breaking_description != commit.breaking %}  - **BREAKING CHANGE:** {{ commit.breaking_description | trim | replace(from="\n", to=" ")}} {% endif %}\
+{% if commit.breaking and commit.breaking_description != commit.breaking %}  - **BREAKING CHANGE:** {{ commit.breaking_description | trim | replace(from="\n", to=" ")}} {% endif %}\
 {% endfor %}\
 {% endfor %}\n
 """
