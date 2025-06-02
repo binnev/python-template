@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1] - 2025-06-02
+
+### 🐛 Bug Fixes
+
+- Build script (#1)
+  - * fix: build script  * fix: build script again
+
 ## [1.3.0] - 2025-06-02
 
 ### 🚀 Features
