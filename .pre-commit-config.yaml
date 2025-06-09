@@ -15,12 +15,12 @@ repos:
       # Run the linter.
       - id: ruff-check
         args: [--fix]
-        stages: [pre-commit]
+        stages: [pre-commit, pre-push]
       # Run the formatter.
       - id: ruff-format
-        stages: [pre-commit]
+        stages: [pre-commit, pre-push]
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: "v1.16.0"
     hooks:
       - id: mypy
-        stages: [pre-commit]
+        stages: [pre-commit, pre-push]
