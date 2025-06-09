@@ -45,7 +45,7 @@
         uv venv --quiet
         source .venv/bin/activate 
         uv pip install -r pyproject.toml --all-extras --quiet
-        pre-commit install > /dev/null
+        pre-commit install --hook-type pre-commit --hook-type commit-msg --hook-type pre-push > /dev/null
         echo "Welcome!"
       '';
     };
