@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.1.0] - 2025-07-02
+
+### 🚀 Features
+
+- Added example env with pycache env var
+
+
+### 🐛 Bug Fixes
+
+- Pre-commit
+
+
+- Pre-commit again
+  - Manually specifying the stage for each hook
+
+- Pre-commit again again
+  - I do want mypy and ruff to run before push
+
+- *(build)* Docs bump truncates project version to major.minor
+
+
+### 📚 Documentation
+
+- Switched readme and symlink
+
+
 ## [5.0.1] - 2025-06-02
 
 ### 🐛 Bug Fixes
