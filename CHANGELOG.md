@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.2.0] - 2025-09-25
+
+### 🚀 Features
+
+- *(flake)* Simplify flake and use stable nixpkgs
+
+
 ## [5.1.0] - 2025-07-02
 
 ### 🚀 Features
