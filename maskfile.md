@@ -59,20 +59,41 @@ git-cliff -o CHANGELOG.md --bump \
 > Release the current version to PyPI
 
 ```sh 
-mask release cleanup
+mask cleanup
 python -m build \
 && twine check dist/* \
 && twine upload --repository testpypi dist/* --verbose \
 && mask ask "Does the TestPyPI release look ok?" \
 && twine upload --repository pypi dist/* --verbose
-mask release cleanup
+mask cleanup
 ```
 
-### cleanup 
+## cleanup 
+> Clean up build artifacts etc
+
+```sh
+mask cleanup dist 
+mask cleanup pycache
+mask cleanup folder "*egg-info"
+```
+
+### cleanup dist 
 > Clean up build artifacts
 
 ```sh
 rm -rf dist/
+```
+
+### cleanup pycache
+> Remove all `__pycache__` folders
+```sh
+mask cleanup folder "__pycache__"
+```
+
+### folder (name) 
+> Recursively remove all folders matching the given name 
+```sh 
+find . -type d -name $name -exec rm -rf {} +
 ```
 
 ## ask (prompt)
