@@ -16,8 +16,10 @@ nav:
       - how-to/versioning.md
       - how-to/run-cli.md
       - how-to/run-api.md
+      - how-to/install.md
   - Reference:
-      - Core: reference/core.md
+      - reference/calculator.md
+      - reference/greeter.md
       - CLI: reference/cli.md
       - API: reference/api.md
 

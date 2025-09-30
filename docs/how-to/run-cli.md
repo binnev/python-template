@@ -1,9 +1,13 @@
 # Running the CLI 
 
+!!! note 
+    First install the CLI (see the [installation guide](../install))
+
+## Calculator
 Show the help with 
 
 ```
- python -m src.cli --help 
+calculator --help 
 ```
 
 It prints: 
@@ -30,13 +34,42 @@ It prints:
 ╰───────────────────────────────────────────────────────────────────────────────╯
 ```
 
-## Example 
+### Example 
 
 ```sh
-python -m src.cli add 420 69
+calculator add 420 69
 ```
 
 result: 
 ```
 The result of addition is: 489.0
+```
+
+## Greeter 
+Show the help with 
+
+```
+greeter --help
+```
+
+It prints: 
+
+```
+ Usage: greeter [OPTIONS] COMMAND [ARGS]...              
+                                                                           
+ Handles the --version flag                                                
+                                                                           
+╭─ Options ───────────────────────────────────────────────────────────────╮
+│ --version             -v        Show the application's version and      │
+│                                 exit.                                   │
+│ --install-completion            Install completion for the current      │
+│                                 shell.                                  │
+│ --show-completion               Show completion for the current shell,  │
+│                                 to copy it or customize the             │
+│                                 installation.                           │
+│ --help                          Show this message and exit.             │
+╰─────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ──────────────────────────────────────────────────────────────╮
+│ greet   Greet someone.                                                  │
+╰─────────────────────────────────────────────────────────────────────────╯
 ```
