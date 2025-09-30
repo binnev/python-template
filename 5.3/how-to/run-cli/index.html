@@ -640,9 +640,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greeter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greeter
     </span>
   </a>
   
@@ -670,6 +694,29 @@
   
   <span class="md-ellipsis">
     Running the API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing the CLI
     
   </span>
   
@@ -737,12 +784,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/core/" class="md-nav__link">
+      <a href="../../reference/calculator/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Core
+    Calculator Module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/greeter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Greeter Module
     
   </span>
   
@@ -833,9 +903,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greeter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greeter
     </span>
   </a>
   
@@ -861,8 +955,13 @@
 
 
 <h1 id="running-the-cli">Running the CLI</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>First install the CLI (see the <a href="../install">installation guide</a>)</p>
+</div>
+<h2 id="calculator">Calculator</h2>
 <p>Show the help with </p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> python -m src.cli --help 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>calculator --help 
 </span></code></pre></div>
 <p>It prints: </p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> Usage: python -m src.cli [OPTIONS] COMMAND [ARGS]...                            
@@ -885,12 +984,35 @@
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>│            (float): The denominator.                                          │
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>╰───────────────────────────────────────────────────────────────────────────────╯
 </span></code></pre></div>
-<h2 id="example">Example</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>src.cli<span class="w"> </span>add<span class="w"> </span><span class="m">420</span><span class="w"> </span><span class="m">69</span>
+<h3 id="example">Example</h3>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>calculator<span class="w"> </span>add<span class="w"> </span><span class="m">420</span><span class="w"> </span><span class="m">69</span>
 </span></code></pre></div>
 <p>result: 
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>The result of addition is: 489.0
 </span></code></pre></div></p>
+<h2 id="greeter">Greeter</h2>
+<p>Show the help with </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>greeter --help
+</span></code></pre></div>
+<p>It prints: </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a> Usage: greeter [OPTIONS] COMMAND [ARGS]...              
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a> Handles the --version flag                                                
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>╭─ Options ───────────────────────────────────────────────────────────────╮
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>│ --version             -v        Show the application&#39;s version and      │
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>│                                 exit.                                   │
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>│ --install-completion            Install completion for the current      │
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>│                                 shell.                                  │
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>│ --show-completion               Show completion for the current shell,  │
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>│                                 to copy it or customize the             │
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>│                                 installation.                           │
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>│ --help                          Show this message and exit.             │
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>╰─────────────────────────────────────────────────────────────────────────╯
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>╭─ Commands ──────────────────────────────────────────────────────────────╮
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>│ greet   Greet someone.                                                  │
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>╰─────────────────────────────────────────────────────────────────────────╯
+</span></code></pre></div>
 
 
 
