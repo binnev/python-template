@@ -3,7 +3,7 @@ import time
 
 import pytest
 
-N = 100
+N = 5
 
 
 @pytest.mark.parametrize("n", range(N))

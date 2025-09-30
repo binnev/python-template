@@ -16,10 +16,10 @@ import typer
 from src import core
 from src.core import calculator
 
-app = typer.Typer()
+calculator_app = typer.Typer()
 
 
-@app.command()
+@calculator_app.command()
 def add(a: float, b: float) -> None:
     """
     Add two numbers.
@@ -32,7 +32,7 @@ def add(a: float, b: float) -> None:
     typer.echo(f"The result of addition is: {result}")
 
 
-@app.command()
+@calculator_app.command()
 def subtract(a: float, b: float) -> None:
     """
     Subtract two numbers.
@@ -45,7 +45,7 @@ def subtract(a: float, b: float) -> None:
     typer.echo(f"The result of subtraction is: {result}")
 
 
-@app.command()
+@calculator_app.command()
 def multiply(a: float, b: float) -> None:
     """
     Multiply two numbers.
@@ -58,7 +58,7 @@ def multiply(a: float, b: float) -> None:
     typer.echo(f"The result of multiplication is: {result}")
 
 
-@app.command()
+@calculator_app.command()
 def divide(a: float, b: float) -> None:
     """
     Divide two numbers.
@@ -79,7 +79,7 @@ def _version_callback(value: bool) -> None:
         raise typer.Exit()
 
 
-@app.callback()
+@calculator_app.callback()
 def main(
     version: Optional[bool] = typer.Option(
         None,
@@ -92,3 +92,7 @@ def main(
 ) -> None:
     """Handles the --version flag"""
     return
+
+
+if __name__ == "__main__":
+    calculator_app()

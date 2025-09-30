@@ -16,7 +16,8 @@ dependencies = [
 ]
 
 [project.scripts]
-calculator = "src.cli.__main__:app"
+calculator = "src.cli.calculator:calculator_app"
+greeter = "src.cli.greeter:greeter_app"
 
 [tool.setuptools.packages.find]
 include = ["src*"]
