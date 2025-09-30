@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.3.0] - 2025-09-30
+
+### 🚀 Features
+
+- Update pyproject.toml to make calculator runnable
+
+
+- More maskfile utils
+
+
+- Multiple runnable CLIs
+  - installing this project now gives you 2 runnable CLIs -- `greeter` and `calculator`.
+
+### 📚 Documentation
+
+- Update
+
+
 ## [5.2.1] - 2025-09-25
 
 ### 🐛 Bug Fixes
