@@ -50,11 +50,11 @@ dev = [
 # This tells setuptools which packages you want to be importable when someone
 # consumes your code as a python library
 [tool.setuptools]
-packages = ["libname"]
+packages = ["python_template"]
 
 # This maps source code directory names to package names
 [tool.setuptools.package-dir]
-libname = "src/core"
+python_template = "src/core"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
