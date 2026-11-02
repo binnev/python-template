@@ -47,9 +47,12 @@ dev = [
     "twine>=6.1.0",
 ]
 
+# This tells setuptools which packages you want to be importable when someone
+# consumes your code as a python library
 [tool.setuptools]
 packages = ["libname"]
 
+# This maps source code directory names to package names
 [tool.setuptools.package-dir]
 libname = "src/core"
 
