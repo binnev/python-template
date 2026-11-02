@@ -18,7 +18,7 @@ greeter = "src.cli.greeter:greeter_app"
 # These are optional dependencies that ARE included when publishing to pypi, but
 # the consumer needs to explicitly request them e.g. `uv add myproject[cli]`
 [project.optional-dependencies]
-cli = ["typer>=0.27.3"] # `uv tool install binnev-python-template[cli]`
+cli = ["typer>=0.27.3"]              # `uv tool install binnev-python-template[cli]`
 api = ["fastapi[standard]>=0.162.0"]
 
 # These are local-only dev dependencies which are NOT included when publishing
@@ -47,8 +47,11 @@ dev = [
     "twine>=6.1.0",
 ]
 
-[tool.setuptools.packages.find]
-include = ["src*"]
+[tool.setuptools]
+packages = ["libname"]
+
+[tool.setuptools.package-dir]
+libname = "src/core"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
