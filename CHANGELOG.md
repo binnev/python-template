@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.0.1] - 2026-11-02
+
+### 🐛 Bug Fixes
+
+- *(build)* Map src.core to libname for library
+
+
 ## [6.0.0] - 2026-11-02
 
 ### 🐛 Bug Fixes
