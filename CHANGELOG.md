@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.0.3] - 2026-11-02
+
+### 🐛 Bug Fixes
+
+- Add py.typed marker
+
+
+### 📚 Documentation
+
+- Comments in pyproject.toml
+
+
 ## [6.0.2] - 2026-11-02
 
 ### 🐛 Bug Fixes
