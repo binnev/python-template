@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.0.2] - 2026-11-02
+
+### 🐛 Bug Fixes
+
+- Module imports for library
+
+
 ## [6.0.1] - 2026-11-02
 
 ### 🐛 Bug Fixes
