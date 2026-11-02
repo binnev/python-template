@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.0.0] - 2026-11-02
+
+### 🐛 Bug Fixes
+
+- [**breaking**] Dependency groups
+  - Moved api and cli dependencies to separate groups
+
 ## [5.3.0] - 2025-09-30
 
 ### 🚀 Features

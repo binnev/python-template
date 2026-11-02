@@ -41,8 +41,8 @@
         # Commands that run every time you enter the shell
         shellHook = ''
           uv venv
+          uv sync
           source .venv/bin/activate
-          uv pip install -r pyproject.toml --all-extras
           pre-commit install --hook-type pre-commit --hook-type commit-msg --hook-type pre-push
           clear
           echo "Welcome!"
