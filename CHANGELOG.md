@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [7.0.0] - 2026-11-02
+
+### 🚀 Features
+
+- [**breaking**] Rename library package
+
+
 ## [6.0.3] - 2026-11-02
 
 ### 🐛 Bug Fixes
