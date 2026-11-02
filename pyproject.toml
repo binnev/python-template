@@ -8,21 +8,22 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 license = "MIT"
-dependencies = [
-    "fastapi>=0.115.12",
-    "httpx>=0.28.1",
-    "typer>=0.15.4",
-    "uvicorn>=0.34.2",
-]
+# These are core dependencies that are always included when publishing to pypi
+dependencies = []
 
 [project.scripts]
 calculator = "src.cli.calculator:calculator_app"
 greeter = "src.cli.greeter:greeter_app"
 
-[tool.setuptools.packages.find]
-include = ["src*"]
-
+# These are optional dependencies that ARE included when publishing to pypi, but
+# the consumer needs to explicitly request them e.g. `uv add myproject[cli]`
 [project.optional-dependencies]
+cli = ["typer>=0.27.3"] # `uv tool install binnev-python-template[cli]`
+api = ["fastapi[standard]>=0.162.0"]
+
+# These are local-only dev dependencies which are NOT included when publishing
+# to pypi
+[dependency-groups]
 dev = [
     "pytest>=8.3.5",
     "pytest-asyncio>=1.0.0",
@@ -45,6 +46,9 @@ dev = [
     "build>=1.2.2.post1",
     "twine>=6.1.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
